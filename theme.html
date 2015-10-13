@@ -169,32 +169,19 @@
     </div>
 
     <div id="footer">
-      {block:PermalinkPagination}
-      <div id="pagination">
-        {block:NextPost}
-        <a href="{NextPost}">&lt;</a>&nbsp;&nbsp;&nbsp;
-        {/block:NextPost}
-        {block:PreviousPost}
-        <a href="{PreviousPost}">&gt;</a>
-        {/block:PreviousPost}
-      </div>
-      {/block:PermalinkPagination}
-
       {block:Pagination}
       <div id="pagination" style="text-transform:lowercase;">
-        <div class="count">{lang:CurrentPage of TotalPages}</div>
-        {block:PreviousPage}
-        <a href="{PreviousPage}">{lang:Previous}</a> | 
+        <a href="{PreviousPage}">newer</a> | 
         {/block:PreviousPage}
         {block:NextPage}
-        <a href="{NextPage}">{lang:Next page}</a>
+        <a href="{NextPage}">older</a>
         {/block:NextPage}
       </div>
       {/block:Pagination}
 
       <div id="credit">
-        Theme <a href="http://notquitetheme.tumblr.com">'Not Quite'</a> by <a href="http://www.petervidani.com" target="_blank">Peter Vidani</a> modified by Louis Knapp
-      </div>
+        <a href="https://github.com/Loos/recyclery">Theme</a>
+        by Louis Knapp </div>
     </div>
 
     {block:IfDisqusShortname}
