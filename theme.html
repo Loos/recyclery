@@ -32,14 +32,8 @@
 
   <body>
     <div id="header">
-      <a class="title" href="/">
-        {Title}
-      </a>
-      {block:Description}
-      <div class="description">
-        {Description}
-      </div>
-      {/block:Description}
+      <a class="title" href="/"> the recyclery </a>
+      <div class="description"> an educational bike space </div>
       <div class="bar">
         {block:HasPages}
         {block:Pages}<a href="{URL}">{Label}</a> | {/block:Pages}
@@ -51,9 +45,9 @@
     </div>
 
     <div id="content">
-      {block:Posts}
-      <div id="post">
-        <div class="left">
+      <span class="left">
+        {block:Posts}
+        <div class="post">
 
           {block:Text}
           {block:Title}
@@ -151,21 +145,29 @@
           {/block:IfDisqusShortname}
           {/block:Permalink}
         </div>
-
-        <div class="right">
-          {block:Date}{block:IfDisqusShortname}<a href="{Permalink}#disqus_thread" class="comments">{lang:View comments}</a>{/block:IfDisqusShortname}{/block:Date}
-          {block:IfShowReblogCredit}
-          {block:RebloggedFrom}
-          <div class="notes">
-            {lang:Reblogged from ReblogParentName 2}
-          </div>
-          {/block:RebloggedFrom}
-          {/block:IfShowReblogCredit}
+        {/block:Posts}
+      </span>
+      <span class="right">
+        <div class="info-panel">
+          <h3> Open Shop Times: </h3>
+          <ul>
+            <li> Monday 4-6 pm (Youth) </li>
+            <li> 1st Mondays 7-9 pm (Spanish) </li>
+            <li> Tuesday 7-9 pm </li>
+            <li> Thursday 7-9 pm </li>
+            <li> Saturday 1-5 pm </li>
+          </ul>
         </div>
-      </div>
+        <div class="info-panel">
+          <h3> Sale Times: </h3>
+          <ul>
+            <li> Wednesday 6-8 pm </li>
+            <li> Saturday 10am-noon </li>
+          </ul>
 
+        </div>
+      </span>
       <div class="space big"></div>
-      {/block:Posts}
     </div>
 
     <div id="footer">
