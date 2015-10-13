@@ -182,20 +182,17 @@ a :focus {
   border: 1px solid #9C9C9C;
 }
 #footer {
-  width: 800px;
   font-family: Verdana, Arial, sans-serif;
   font-size: 0.69em;
   margin: auto;
 }
 #footer #pagination {
-  width: 488px;
   height: 21px;
   color: #ffffff;
   line-height: 1.8em;
   text-align: right;
   background: #642600;
   position: relative;
-  margin: auto 0 auto 300px;
   padding: 0 6px;
 }
 #footer #pagination .count {
