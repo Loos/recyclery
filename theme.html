@@ -120,11 +120,11 @@
 
           {block:IfShowTags}
           {block:HasTags}
+          <a href="{Permalink}" class="timestamp">
+            Posted {block:Date}{block:NewDayDate}{ShortMonth}. {DayOfMonth}, {Year} {block:NewDayDate} {block:IfShowNotes}{block:NoteCount} with {NoteCountWithLabel}{/block:NoteCount}{/block:IfShowNotes}{/block:Date}
+          </a>
           <div class="tags">
-            <a href="{Permalink}" class="timestamp">
-              Posted {block:Date}{block:NewDayDate}{ShortMonth}. {DayOfMonth}, {Year} {block:NewDayDate} {block:IfShowNotes}{block:NoteCount} with {NoteCountWithLabel}{/block:NoteCount}{/block:IfShowNotes}{/block:Date}
-            </a>
-            {block:Tags}<a href="{TagURL}" class="tag">{Tag}</a>{/block:Tags}
+            {block:Tags}<a href="{TagURL}" class="tag">#{Tag}</a>{/block:Tags}
           </div>
           <div class="space small"></div>
           {/block:HasTags}
