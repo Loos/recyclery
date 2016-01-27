@@ -33,14 +33,14 @@
   <body>
     <div id="header">
       <a class="title" href="/"> the recyclery </a>
-      <div class="description"> an educational bike space </div>
       <div class="bar">
         {block:HasPages}
-        {block:Pages}<a href="{URL}">{Label}</a> | {/block:Pages}
+          {block:Pages}
+            <div class="nav-element">
+              <a href="{URL}">{Label}</a>
+            </div>
+          {/block:Pages}
         {/block:HasPages}
-        {block:AskEnabled}<a href="/ask">{AskLabel}</a> | {/block:AskEnabled}
-        {block:SubmissionsEnabled}<a href="/submit">{SubmitLabel}</a> | {/block:SubmissionsEnabled}
-        <span style="text-transform:lowercase;"><a href="/archive">{lang:Archive}</a></span>
       </div>
     </div>
 

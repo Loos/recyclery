@@ -1,0 +1,32 @@
+add link to archive
+        <span style="text-transform:lowercase;"><a href="/archive">{lang:Archive}</a></span>
+
+add footer with links to 
+  about
+  location
+  calendar
+
+- use entire page width
+- dilineate posts from each other
+- unclear navigation
+  architecturerichmond.com
+- indicate navigation with color/colorhover
+- searching?
+- title should link to home
+- more branding - pull in chain heart?
+- footer for 10% stuff
+- mini about-us blurb
+- think about organizing different types of posts
+- investigate google analytics
+  site should be  designed for the traffic it receives
+- think of personas & different reasons ppl visit site
+  site should accommodate what people want to do the most
+  receivescyclery agenda should be secondary
+  look @ working bikes for super actionionable nav example
+- from analytics, looks like
+    1) bike sales
+    2) donating bikes
+    3) open shop
+    4) volunteering
+    5) classes
+    are the priorities for visitors of the site
